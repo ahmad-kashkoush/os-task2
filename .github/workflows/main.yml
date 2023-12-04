@@ -15,7 +15,7 @@ jobs:
           secrets.DOCKER_TOKEN }}
 
       - name: "Build docker Image"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mySecondImage
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mySecondImage .
 
       - name: "push to docker hub"
         run: docker push  ${{ secrets.DOCKER_USERNAME }}/mySecondImage
