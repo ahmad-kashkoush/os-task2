@@ -4,3 +4,4 @@ public class ahmed{
         System.out.println(arabicText);
     }
 }
+ 
